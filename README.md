@@ -24,6 +24,9 @@ docker pull t0shy/subsync-docker:latest
 docker run --rm -v "$(pwd):/files" t0shy/subsync-docker:latest -1.00004170838 /files/input.ass >> ./output.ass
 ```
 
+> Note: The example above scales with `1.00004170838`, which is obtained through the original source framerate `23.977` divided by the desired
+> framerate `23.976`.
+
 3. Done
 
 The shifted output is redirected to a new file, `./output.ass`.
